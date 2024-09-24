@@ -1,0 +1,34 @@
+# Update device list before starting the fuzzer
+devices:
+  nrf-switch:
+    id: 1
+    type: SWITCH
+    ip: fd11:22:0:0:1e70:599a:d61:2cc1
+  ikea:
+    id: 2
+    bridged: true
+    type: BULB
+    bridge:
+      id: 5
+      ip: 192.168.0.216
+  nanoleaf:
+    id: 3
+    type: BULB
+    ip: fd11:22:0:0:880f:dc73:661b:a685
+  nrf-lock:
+    id: 4
+    type: LOCK
+    ip: fd11:22:0:0:a83:786d:8833:7d6d
+  si-window-cover:
+    id: 6
+    type: window_cover
+    ip: fd11:22:0:0:bce6:f082:f80:3114
+
+# If enabled, the script will first perform a pre-check to ensure all devices are working properly and are reachable
+pre_check: true
+
+# Specify the location of the connected home ip repository
+chip_home: /home/saurabh/University/matter/connectedhomeip
+
+# The directory relative to chip_home where the output of the build will be stored.
+chip_output_dir: out/host
