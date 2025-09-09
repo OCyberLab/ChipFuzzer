@@ -99,3 +99,18 @@ Follow the same steps as section 4.2, but in step 3 search for `Matter Lock`
 8. The LCD screen on the board should now show a QR code. Using a QR code scanning app on the phone get the matter code
 9. Provision the device using `chip-tool` by running `./chip-tool pairing code-thread 6 hex:<otbr_dataset> MT:6FCJ142C00KA0648G00 --bypass-attestation-verifier true` Replace `<otbr_dataset>` with the data set obtained from the Thread Network in Step 3.3
 10. Button 1 should act as the opening of the window cover, and button 2 is closed. The LCD screen should show the current position of the window cover. For more information, click on 'View Project Documentation' link in Simplicity Studio
+
+
+## Citation
+
+If you use this work, please cite the following publication:
+
+```bibtex
+@inproceedings{joshi2024chipfuzzer,
+  title={ChipFuzzer: Towards Fuzzing Matter-Based IoT Devices for Vulnerability Detection},
+  author={Joshi, Saurabh and Shirani, Paria},
+  booktitle={International Conference on Security and Privacy in Communication Systems},
+  pages={28--50},
+  year={2024},
+  organization={Springer}
+}
